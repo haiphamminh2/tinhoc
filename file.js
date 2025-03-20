@@ -421,7 +421,7 @@
                             <p><strong>Tổng tiền:</strong> ${formatCurrency(total)}</p>
                             <p><strong>Ngân hàng:</strong> TPBank</p>
                             <p><strong>Số tài khoản:</strong> Totuan6868</p>
-                            <p><strong>Tên tài khoản:</strong> Ẩm Thực CL</p>
+                            <p><strong>Tên tài khoản:</strong> Ẩm Thực Lyly</p>
                             <p><strong>Nội dung chuyển khoản:</strong> Thanh toan don hang #${orderInfo.invoiceNumber}</p>
                         </div>
                         <div class="qr-container">

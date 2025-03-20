@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quán Ăn LyLy - Tinh Hoa Ẩm Thực Việt Nam</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://null6868.github.io/tinhoc/file.css">
+</head>
+<body>
+    <!-- Header -->
+    <!-- Header với thiết kế nổi bật hơn -->
+    <header class="lyly-header">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-badge">Ngon nhất vùng</div>
+                <div class="logo-wrapper">
+                    <span class="logo-icon">🍜</span>
+                    <h1>Quán ăn <span class="highlight">LyLy</span></h1>
+                </div>
+                <p class="tagline">Tinh hoa ẩm thực Việt Nam</p>
+            </div>
+            <div class="header-buttons">
+                <button class="cta-button" id="menu-btn">Xem thực đơn</button>
+                <button class="reservation-button" id="reservation-btn">Đặt bàn ngay</button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="#" class="nav-link active" data-page="menu">
+                <i class="nav-icon">🍽️</i>
+                <span>Menu</span>
+            </a>
+            <a href="#" class="nav-link" data-page="about">
+                <i class="nav-icon">ℹ️</i>
+                <span>Giới Thiệu</span>
+            </a>
+            <a href="#" class="nav-link" data-page="reservation">
+                <i class="nav-icon">📅</i>
+                <span>Đặt Bàn</span>
+            </a>
+            <a href="#" class="nav-link" data-page="contact">
+                <i class="nav-icon">📞</i>
+                <span>Liên Hệ</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Trang Menu -->
+    <div class="page active" id="menu-page">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeIn">Thực Đơn Của Chúng Tôi</h2>
+            <div class="menu-section" id="menu-container">
+                <!-- Menu items will be added here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Trang Giới Thiệu -->
+    <div class="page" id="about-page">
+        <div class="container">
+            <h2 class="section-title">Giới Thiệu Quán ăn LyLy</h2>
+
+            <div class="about-section">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Về Chúng Tôi</h3>
+                        <p>Quán Lyly được thành lập vào năm 2015, với mong muốn mang đến cho khách hàng những món ăn
+                            Việt Nam truyền thống với hương vị đậm đà, nguyên liệu tươi ngon và giá cả phải chăng.</p>
+                        <p>Chúng tôi tự hào về những công thức nấu ăn gia truyền, được chế biến bởi đội ngũ đầu bếp có
+                            kinh nghiệm lâu năm trong ngành ẩm thực.</p>
+                        <p>Không gian quán được thiết kế ấm cúng, thoải mái, phù hợp cho cả những bữa ăn gia đình, gặp
+                            gỡ bạn bè hay các buổi hẹn hò lãng mạn.</p>
+
+                        <div class="contact-info">
+                            <h3>Thông Tin Liên Hệ</h3>
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>123 Đường Lê Lợi, Quận 1, TP. Hồ Chí Minh</div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div>0123 456 789</div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">✉️</div>
+                                <div>info@quanlyly.com</div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">🕒</div>
+                                <div>Mở cửa: 7:00 - 22:00 (Thứ 2 - Chủ Nhật)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+                            alt="Quán ăn LyLy">
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4946681053188!2d106.69908867486087!3d10.771594089387621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4b3330bcc7%3A0x4db964d76bf6e18e!2zMTIzIMSQxrDhu51uZyBMw6ogTOG7o2ksIELhur9uIE5naMOpLCBRdeG6rW4gMSwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1679900553262!5m2!1svi!2s"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trang Đặt Bàn -->
+    <div class="page" id="reservation-page">
+        <div class="container">
+            <h2 class="section-title">Đặt Bàn Tại Quán ăn LyLy</h2>
+
+            <div class="reservation-section">
+                <div class="reservation-form-container">
+                    <form id="reservation-form" class="reservation-form">
+                        <div class="form-group">
+                            <label for="name">Họ và tên</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Ngày</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="time">Giờ</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guests">Số lượng khách</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Chọn số lượng</option>
+                                <option value="1">1 người</option>
+                                <option value="2">2 người</option>
+                                <option value="3">3 người</option>
+                                <option value="4">4 người</option>
+                                <option value="5">5 người</option>
+                                <option value="6">6 người</option>
+                                <option value="7">7 người</option>
+                                <option value="8">8 người</option>
+                                <option value="more">Nhiều hơn 8 người</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Ghi chú thêm</label>
+                            <textarea id="notes" name="notes" rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="reservation-submit-btn">Đặt Bàn Ngay</button>
+                    </form>
+                </div>
+
+                <div class="reservation-info">
+                    <h3>Thông Tin Đặt Bàn</h3>
+                    <p>Quý khách vui lòng đặt bàn trước ít nhất 2 giờ để chúng tôi có thể chuẩn bị tốt nhất.</p>
+
+                    <div class="reservation-policy">
+                        <h4>Chính sách đặt bàn:</h4>
+                        <ul>
+                            <li>Quý khách vui lòng đến đúng giờ đã đặt.</li>
+                            <li>Nếu đến trễ quá 15 phút, chúng tôi có quyền hủy đặt bàn.</li>
+                            <li>Nếu quý khách muốn hủy đặt bàn, vui lòng thông báo trước ít nhất 1 giờ.</li>
+                        </ul>
+                    </div>
+
+                    <div class="business-hours">
+                        <h4>Giờ mở cửa:</h4>
+                        <div class="hours-item">
+                            <span>Thứ 2 - Thứ 6:</span>
+                            <span>10:00 - 22:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Thứ 7 - Chủ nhật:</span>
+                            <span>09:00 - 23:00</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-for-reservation">
+                        <h4>Liên hệ đặt bàn:</h4>
+                        <p><i class="contact-icon-small">📞</i> 0123 456 789</p>
+                        <p><i class="contact-icon-small">✉️</i> booking@quanlyly.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trang Liên Hệ -->
+    <div class="page" id="contact-page">
+        <div class="container">
+            <h2 class="section-title">Liên Hệ Với Chúng Tôi</h2>
+
+            <div class="about-section">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Gửi Tin Nhắn Cho Chúng Tôi</h3>
+
+                        <form id="contact-form" class="reservation-form">
+                            <div class="form-group">
+                                <label for="contact-name">Họ và tên</label>
+                                <input type="text" id="contact-name" name="contact-name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" name="contact-email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-subject">Tiêu đề</label>
+                                <input type="text" id="contact-subject" name="contact-subject" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message">Nội dung</label>
+                                <textarea id="contact-message" name="contact-message" rows="6" required></textarea>
+                            </div>
+
+                            <button type="submit" class="reservation-submit-btn">Gửi Tin Nhắn</button>
+                        </form>
+                    </div>
+
+                    <div class="about-text">
+                        <h3>Thông Tin Liên Hệ</h3>
+                        <p>Quý khách có thể liên hệ với chúng tôi qua các kênh sau:</p>
+
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>123 Đường Lê Lợi, Quận 1, TP. Hồ Chí Minh</div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div>0123 456 789</div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">✉️</div>
+                                <div>info@quanlyly.com</div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">🕒</div>
+                                <div>Mở cửa: 7:00 - 22:00 (Thứ 2 - Chủ Nhật)</div>
+                            </div>
+                        </div>
+
+                        <div class="social-contact" style="margin-top: 30px;">
+                            <h4 style="margin-bottom: 15px;">Kết nối với chúng tôi:</h4>
+                            <div style="display: flex; gap: 15px;">
+                                <a href="#" style="text-decoration: none; color: #333;">Facebook</a>
+                                <a href="#" style="text-decoration: none; color: #333;">Instagram</a>
+                                <a href="#" style="text-decoration: none; color: #333;">TikTok</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4946681053188!2d106.69908867486087!3d10.771594089387621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4b3330bcc7%3A0x4db964d76bf6e18e!2zMTIzIMSQxrDhu51uZyBMw6ogTOG7o2ksIELhur9uIE5naMOpLCBRdeG6rW4gMSwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1679900553262!5m2!1svi!2s"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nút mở giỏ hàng -->
+    <button class="cart-toggle" id="cart-toggle">
+        <i class="fas fa-shopping-cart">🛒</i>
+        <span class="cart-count" id="cart-count">0</span>
+    </button>
+
+    <!-- Giỏ hàng -->
+    <div class="cart-section" id="cart-section">
+        <div class="cart-header">
+            <h2>Giỏ Hàng</h2>
+            <button class="close-cart" id="close-cart">×</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p class="empty-cart">Giỏ hàng của bạn đang trống</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Tổng cộng:</span>
+                <span id="cart-total">0₫</span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">Thanh Toán</button>
+        </div>
+    </div>
+
+    <!-- Overlay khi mở giỏ hàng -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Hóa đơn để in -->
+    <div class="invoice-print" id="invoice-print">
+        <div class="invoice-container">
+            <div class="invoice-header">
+                <div class="invoice-logo">Quán ăn LyLy</div>
+                <div class="invoice-details">
+                    <div>Số hóa đơn: <span id="invoice-number"></span></div>
+                    <div>Ngày: <span id="invoice-date"></span></div>
+                    <div>Giờ: <span id="invoice-time"></span></div>
+                </div>
+            </div>
+
+            <h2>Hóa Đơn Thanh Toán</h2>
+
+            <table class="invoice-table">
+                <thead>
+                    <tr>
+                        <th>Món ăn</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody id="invoice-items">
+                    <!-- Items will be added here by JavaScript -->
+                </tbody>
+            </table>
+
+            <div class="invoice-total">
+                <div>Tổng cộng: <span id="invoice-total"></span></div>
+            </div>
+
+            <div class="invoice-footer">
+                <p>Cảm ơn quý khách đã sử dụng dịch vụ của chúng tôi!</p>
+                <p>Địa chỉ: 123 Đường Lê Lợi, Quận 1, TP. Hồ Chí Minh</p>
+                <p>Hotline: 0123 456 789 | Email: info@quanlyly.com</p>
+            </div>
+
+            <div class="no-print" style="text-align: center;">
+                <button class="print-btn" onclick="window.print()">In Hóa Đơn</button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">Quán ăn LyLy</div>
+                    <p>Mang đến cho bạn hương vị Việt Nam đích thực với những món ăn truyền thống được chế biến từ
+                        nguyên liệu tươi ngon nhất.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="#" data-page="menu">Thực đơn</a></li>
+                        <li><a href="#" data-page="about">Giới thiệu</a></li>
+                        <li><a href="#" data-page="reservation">Đặt bàn</a></li>
+                        <li><a href="#" data-page="contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>Đăng ký nhận tin</h3>
+                    <p>Đăng ký để nhận thông tin về các chương trình khuyến mãi và món ăn mới.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Nhập email của bạn" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-button">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Quán ăn LyLy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">↑</button>
+
+    <script src="https://null6868.github.io/tinhoc/file.js"></script>
+</body>
+
+</html>
